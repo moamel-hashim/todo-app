@@ -1,3 +1,7 @@
-<h2>{{todo.name | uppercase}} Details</h2>
-<div>Id:{{todo.id}}</div>
-<div>Name: {{todo.name}}</div>
+<div>
+  <label>Item:
+    <input [(ngModel)]='todo.name'>
+  </label>
+</div>
+<hr>
+<app-todo-detail [todo]="todo"></app-todo-detail>
